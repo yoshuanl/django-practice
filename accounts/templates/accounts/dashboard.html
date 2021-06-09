@@ -21,7 +21,7 @@
 
                 {% for customer in customerList %}
                 <tr>
-                    <th></th>
+                    <td><a href="{% url 'customer' customer.id %}">View</a></td>
                     <td>{{customer.name}}</td>
                     <td>{{customer.phone}}</td>
                 </tr>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="col-md-7">
+    <div class=" col-md-7">
         <h5>LAST 5 ORDERS</h5>
         <hr>
         <div class="card card-body">
